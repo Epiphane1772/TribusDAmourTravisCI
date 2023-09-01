@@ -1,0 +1,965 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3707818D2A8F52BE0089D46B /* TBDAServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3707818C2A8F52BE0089D46B /* TBDAServiceProtocol.swift */; };
+		3707818F2A8F54820089D46B /* MockPodcastSearchResult.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3707818E2A8F54820089D46B /* MockPodcastSearchResult.txt */; };
+		370781912A8F71D50089D46B /* MockTBDAService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370781902A8F71D50089D46B /* MockTBDAService.swift */; };
+		370781932A8F71F30089D46B /* PodcastSearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370781922A8F71F30089D46B /* PodcastSearchViewModelTests.swift */; };
+		370E5D232A9B2A330009CFDD /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370E5D222A9B2A330009CFDD /* CoreDataStack.swift */; };
+		3711A79F2A78DEB3007F8B9D /* TribusDAmourApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3711A79E2A78DEB3007F8B9D /* TribusDAmourApp.swift */; };
+		3711A7A12A78DEB3007F8B9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3711A7A02A78DEB3007F8B9D /* ContentView.swift */; };
+		3711A7A32A78DEB4007F8B9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3711A7A22A78DEB4007F8B9D /* Assets.xcassets */; };
+		3711A7A82A78DEB4007F8B9D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3711A7A72A78DEB4007F8B9D /* Persistence.swift */; };
+		3711A7AB2A78DEB4007F8B9D /* TribusDAmour.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3711A7A92A78DEB4007F8B9D /* TribusDAmour.xcdatamodeld */; };
+		3711A7B52A78DEB4007F8B9D /* TribusDAmourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3711A7B42A78DEB4007F8B9D /* TribusDAmourTests.swift */; };
+		3711A7BF2A78DEB4007F8B9D /* TribusDAmourUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3711A7BE2A78DEB4007F8B9D /* TribusDAmourUITests.swift */; };
+		3711A7C12A78DEB4007F8B9D /* TribusDAmourUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3711A7C02A78DEB4007F8B9D /* TribusDAmourUITestsLaunchTests.swift */; };
+		37322BF02A790DBB0007F759 /* PodcastData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37322BEF2A790DBB0007F759 /* PodcastData.swift */; };
+		374B28DF2A88CA5D00E08772 /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 374B28DE2A88CA5D00E08772 /* Speech.framework */; };
+		374B28E22A891A8800E08772 /* AudioSessionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B28E12A891A8800E08772 /* AudioSessionHandler.swift */; };
+		375A73C52A8D22DA0017231A /* AVPlayerViewControllerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375A73C42A8D22DA0017231A /* AVPlayerViewControllerWrapper.swift */; };
+		3765D4062A934C2900CD3C88 /* PlayerStatePersistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3765D4052A934C2900CD3C88 /* PlayerStatePersistable.swift */; };
+		3766341E2A8144E200DC2BD9 /* TBDASettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3766341D2A8144E200DC2BD9 /* TBDASettingsView.swift */; };
+		376634202A81626900DC2BD9 /* PodcastRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3766341F2A81626900DC2BD9 /* PodcastRowView.swift */; };
+		376634222A81632900DC2BD9 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376634212A81632900DC2BD9 /* SearchBarView.swift */; };
+		376BFACC2A8E68C300BDDAB8 /* AVPlayerViewControllerWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BFACB2A8E68C300BDDAB8 /* AVPlayerViewControllerWrapperTests.swift */; };
+		376BFAD22A8E6A3800BDDAB8 /* PlayerStatePersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BFAD12A8E6A3800BDDAB8 /* PlayerStatePersistence.swift */; };
+		376BFAD62A8F34BB00BDDAB8 /* PlayerStatePersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BFAD52A8F34BB00BDDAB8 /* PlayerStatePersistenceTests.swift */; };
+		376BFADB2A8F36A000BDDAB8 /* PodcastCoreDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BFADA2A8F36A000BDDAB8 /* PodcastCoreDataManagerTests.swift */; };
+		376D47322A89DB3100DA6979 /* PodcastSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376D47312A89DB3100DA6979 /* PodcastSearchViewModel.swift */; };
+		37721E262A8DD6E200EE7E8D /* PlayerStatePersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37721E252A8DD6E200EE7E8D /* PlayerStatePersistence.swift */; };
+		378614C22A8E493800B444FD /* DataMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378614C12A8E493800B444FD /* DataMapperTests.swift */; };
+		378614C42A8E4C1D00B444FD /* GenericAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378614C32A8E4C1D00B444FD /* GenericAPITests.swift */; };
+		379562EE2A873921007E107F /* PodcastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379562ED2A873921007E107F /* PodcastViewModel.swift */; };
+		37AA6A632A835CA200DCC64C /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AA6A622A835CA200DCC64C /* AudioPlayerManager.swift */; };
+		37AF81DB2A7A17EB00340547 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AF81D62A7A17EB00340547 /* RequestProtocol.swift */; };
+		37AF81DC2A7A17EB00340547 /* GenericAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AF81D72A7A17EB00340547 /* GenericAPI.swift */; };
+		37AF81DD2A7A17EB00340547 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AF81D82A7A17EB00340547 /* APIError.swift */; };
+		37AF81DE2A7A17EB00340547 /* GenericAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AF81D92A7A17EB00340547 /* GenericAPIProtocol.swift */; };
+		37AF81DF2A7A17EB00340547 /* DataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AF81DA2A7A17EB00340547 /* DataMapper.swift */; };
+		37AF81E32A7A1D1F00340547 /* TBDAService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AF81E22A7A1D1F00340547 /* TBDAService.swift */; };
+		37AF81E52A7A1D3500340547 /* TBDARequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AF81E42A7A1D3500340547 /* TBDARequest.swift */; };
+		37B7485A2A7B7E7C0018E59B /* PodcastListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B748592A7B7E7C0018E59B /* PodcastListView.swift */; };
+		37E446E12A7C1657000A0D9F /* PodcastSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E446E02A7C1657000A0D9F /* PodcastSearchView.swift */; };
+		37E446E32A7C1669000A0D9F /* PodcastFavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E446E22A7C1669000A0D9F /* PodcastFavoriteView.swift */; };
+		37E446E82A7CC4A2000A0D9F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 37E446E72A7CC4A2000A0D9F /* Kingfisher */; };
+		37E446EA2A7CCA58000A0D9F /* PodcastDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E446E92A7CCA58000A0D9F /* PodcastDetailView.swift */; };
+		37F4A7F02A8E4FA9000CA09A /* MockWeatherData.txt in Resources */ = {isa = PBXBuildFile; fileRef = 37F4A7EF2A8E4FA9000CA09A /* MockWeatherData.txt */; };
+		37F4A7F22A8E5B60000CA09A /* TBDAServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F4A7F12A8E5B60000CA09A /* TBDAServiceTests.swift */; };
+		37F4A7F42A8E5C1D000CA09A /* PodcastRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F4A7F32A8E5C1D000CA09A /* PodcastRequestTests.swift */; };
+		37F4A7F62A8E655A000CA09A /* AudioPlayerManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F4A7F52A8E655A000CA09A /* AudioPlayerManagerTests.swift */; };
+		37F4A7F82A8E6661000CA09A /* AudioSessionHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F4A7F72A8E6661000CA09A /* AudioSessionHandlerTests.swift */; };
+		37FDFCFE2A8CA398003F8622 /* PodcastCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FDFCFD2A8CA398003F8622 /* PodcastCoreDataManager.swift */; };
+		37FEB33B2A934F2600661A46 /* PlayerStatePersistenceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEB33A2A934F2600661A46 /* PlayerStatePersistenceUITests.swift */; };
+		37FEB33D2A93525900661A46 /* PodcastPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEB33C2A93525900661A46 /* PodcastPlayerView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3711A7B12A78DEB4007F8B9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3711A7932A78DEB3007F8B9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3711A79A2A78DEB3007F8B9D;
+			remoteInfo = TribusDAmour;
+		};
+		3711A7BB2A78DEB4007F8B9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3711A7932A78DEB3007F8B9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3711A79A2A78DEB3007F8B9D;
+			remoteInfo = TribusDAmour;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3707818C2A8F52BE0089D46B /* TBDAServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBDAServiceProtocol.swift; sourceTree = "<group>"; };
+		3707818E2A8F54820089D46B /* MockPodcastSearchResult.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = MockPodcastSearchResult.txt; sourceTree = "<group>"; };
+		370781902A8F71D50089D46B /* MockTBDAService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTBDAService.swift; sourceTree = "<group>"; };
+		370781922A8F71F30089D46B /* PodcastSearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastSearchViewModelTests.swift; sourceTree = "<group>"; };
+		370E5D222A9B2A330009CFDD /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		3711093D2A93EFE4006A4D61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3711A79B2A78DEB3007F8B9D /* TribusDAmour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TribusDAmour.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3711A79E2A78DEB3007F8B9D /* TribusDAmourApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TribusDAmourApp.swift; sourceTree = "<group>"; };
+		3711A7A02A78DEB3007F8B9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3711A7A22A78DEB4007F8B9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3711A7A72A78DEB4007F8B9D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		3711A7AA2A78DEB4007F8B9D /* TribusDAmour.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TribusDAmour.xcdatamodel; sourceTree = "<group>"; };
+		3711A7B02A78DEB4007F8B9D /* TribusDAmourTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TribusDAmourTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3711A7B42A78DEB4007F8B9D /* TribusDAmourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TribusDAmourTests.swift; sourceTree = "<group>"; };
+		3711A7BA2A78DEB4007F8B9D /* TribusDAmourUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TribusDAmourUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3711A7BE2A78DEB4007F8B9D /* TribusDAmourUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TribusDAmourUITests.swift; sourceTree = "<group>"; };
+		3711A7C02A78DEB4007F8B9D /* TribusDAmourUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TribusDAmourUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		37322BEF2A790DBB0007F759 /* PodcastData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastData.swift; sourceTree = "<group>"; };
+		374B28DE2A88CA5D00E08772 /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = System/Library/Frameworks/Speech.framework; sourceTree = SDKROOT; };
+		374B28E12A891A8800E08772 /* AudioSessionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionHandler.swift; sourceTree = "<group>"; };
+		375A73C42A8D22DA0017231A /* AVPlayerViewControllerWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerViewControllerWrapper.swift; sourceTree = "<group>"; };
+		3765D4052A934C2900CD3C88 /* PlayerStatePersistable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatePersistable.swift; sourceTree = "<group>"; };
+		3766341D2A8144E200DC2BD9 /* TBDASettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBDASettingsView.swift; sourceTree = "<group>"; };
+		3766341F2A81626900DC2BD9 /* PodcastRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastRowView.swift; sourceTree = "<group>"; };
+		376634212A81632900DC2BD9 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		376BFACB2A8E68C300BDDAB8 /* AVPlayerViewControllerWrapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerViewControllerWrapperTests.swift; sourceTree = "<group>"; };
+		376BFAD12A8E6A3800BDDAB8 /* PlayerStatePersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatePersistence.swift; sourceTree = "<group>"; };
+		376BFAD52A8F34BB00BDDAB8 /* PlayerStatePersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatePersistenceTests.swift; sourceTree = "<group>"; };
+		376BFADA2A8F36A000BDDAB8 /* PodcastCoreDataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCoreDataManagerTests.swift; sourceTree = "<group>"; };
+		376D47312A89DB3100DA6979 /* PodcastSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastSearchViewModel.swift; sourceTree = "<group>"; };
+		37721E252A8DD6E200EE7E8D /* PlayerStatePersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatePersistence.swift; sourceTree = "<group>"; };
+		378614C12A8E493800B444FD /* DataMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMapperTests.swift; sourceTree = "<group>"; };
+		378614C32A8E4C1D00B444FD /* GenericAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericAPITests.swift; sourceTree = "<group>"; };
+		379562ED2A873921007E107F /* PodcastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastViewModel.swift; sourceTree = "<group>"; };
+		37AA6A622A835CA200DCC64C /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
+		37AF81D62A7A17EB00340547 /* RequestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		37AF81D72A7A17EB00340547 /* GenericAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericAPI.swift; sourceTree = "<group>"; };
+		37AF81D82A7A17EB00340547 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		37AF81D92A7A17EB00340547 /* GenericAPIProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericAPIProtocol.swift; sourceTree = "<group>"; };
+		37AF81DA2A7A17EB00340547 /* DataMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataMapper.swift; sourceTree = "<group>"; };
+		37AF81E22A7A1D1F00340547 /* TBDAService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBDAService.swift; sourceTree = "<group>"; };
+		37AF81E42A7A1D3500340547 /* TBDARequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBDARequest.swift; sourceTree = "<group>"; };
+		37B748592A7B7E7C0018E59B /* PodcastListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastListView.swift; sourceTree = "<group>"; };
+		37E446E02A7C1657000A0D9F /* PodcastSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastSearchView.swift; sourceTree = "<group>"; };
+		37E446E22A7C1669000A0D9F /* PodcastFavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastFavoriteView.swift; sourceTree = "<group>"; };
+		37E446E92A7CCA58000A0D9F /* PodcastDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastDetailView.swift; sourceTree = "<group>"; };
+		37F4A7EF2A8E4FA9000CA09A /* MockWeatherData.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = MockWeatherData.txt; sourceTree = "<group>"; };
+		37F4A7F12A8E5B60000CA09A /* TBDAServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBDAServiceTests.swift; sourceTree = "<group>"; };
+		37F4A7F32A8E5C1D000CA09A /* PodcastRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastRequestTests.swift; sourceTree = "<group>"; };
+		37F4A7F52A8E655A000CA09A /* AudioPlayerManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManagerTests.swift; sourceTree = "<group>"; };
+		37F4A7F72A8E6661000CA09A /* AudioSessionHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionHandlerTests.swift; sourceTree = "<group>"; };
+		37FDFCFD2A8CA398003F8622 /* PodcastCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCoreDataManager.swift; sourceTree = "<group>"; };
+		37FEB33A2A934F2600661A46 /* PlayerStatePersistenceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatePersistenceUITests.swift; sourceTree = "<group>"; };
+		37FEB33C2A93525900661A46 /* PodcastPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastPlayerView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3711A7982A78DEB3007F8B9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				374B28DF2A88CA5D00E08772 /* Speech.framework in Frameworks */,
+				37E446E82A7CC4A2000A0D9F /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3711A7AD2A78DEB4007F8B9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3711A7B72A78DEB4007F8B9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3711A7922A78DEB3007F8B9D = {
+			isa = PBXGroup;
+			children = (
+				3711A79D2A78DEB3007F8B9D /* TribusDAmour */,
+				3711A7A92A78DEB4007F8B9D /* TribusDAmour.xcdatamodeld */,
+				3711A7A22A78DEB4007F8B9D /* Assets.xcassets */,
+				3711A7B32A78DEB4007F8B9D /* TribusDAmourTests */,
+				3711A7BD2A78DEB4007F8B9D /* TribusDAmourUITests */,
+				3711A79C2A78DEB3007F8B9D /* Products */,
+				374B28DD2A88CA5D00E08772 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3711A79C2A78DEB3007F8B9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3711A79B2A78DEB3007F8B9D /* TribusDAmour.app */,
+				3711A7B02A78DEB4007F8B9D /* TribusDAmourTests.xctest */,
+				3711A7BA2A78DEB4007F8B9D /* TribusDAmourUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3711A79D2A78DEB3007F8B9D /* TribusDAmour */ = {
+			isa = PBXGroup;
+			children = (
+				3711093D2A93EFE4006A4D61 /* Info.plist */,
+				3711A79E2A78DEB3007F8B9D /* TribusDAmourApp.swift */,
+				3711A7A72A78DEB4007F8B9D /* Persistence.swift */,
+				374B28E52A895CBA00E08772 /* Models */,
+				374B28F52A89666300E08772 /* Views */,
+			);
+			path = TribusDAmour;
+			sourceTree = "<group>";
+		};
+		3711A7B32A78DEB4007F8B9D /* TribusDAmourTests */ = {
+			isa = PBXGroup;
+			children = (
+				3711A7B42A78DEB4007F8B9D /* TribusDAmourTests.swift */,
+				376BFAD72A8F359A00BDDAB8 /* Nerwork */,
+				376BFAD82A8F35B200BDDAB8 /* Service */,
+				376BFAD92A8F35FF00BDDAB8 /* Audio */,
+				376BFADC2A8F36B700BDDAB8 /* CoreData */,
+				37B3D8612A8F728700B93040 /* Search */,
+			);
+			path = TribusDAmourTests;
+			sourceTree = "<group>";
+		};
+		3711A7BD2A78DEB4007F8B9D /* TribusDAmourUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3711A7BE2A78DEB4007F8B9D /* TribusDAmourUITests.swift */,
+				3711A7C02A78DEB4007F8B9D /* TribusDAmourUITestsLaunchTests.swift */,
+				37FEB33A2A934F2600661A46 /* PlayerStatePersistenceUITests.swift */,
+			);
+			path = TribusDAmourUITests;
+			sourceTree = "<group>";
+		};
+		374B28DD2A88CA5D00E08772 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				374B28DE2A88CA5D00E08772 /* Speech.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		374B28E52A895CBA00E08772 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				37AF81E12A7A181600340547 /* Network */,
+				37B7485B2A7B85230018E59B /* Service */,
+				37AA6A612A835C7700DCC64C /* Audio */,
+				37FDFCFF2A8CA3A9003F8622 /* CoreData */,
+				378614B32A8E21D300B444FD /* Podcasts */,
+				378614B12A8E1ECE00B444FD /* Search */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		374B28F52A89666300E08772 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				376D47302A89D50B00DA6979 /* Entry */,
+				376D472E2A89D3CB00DA6979 /* Common */,
+				376D472F2A89D3D900DA6979 /* Favorites */,
+				376D47352A89E95400DA6979 /* Settings */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		376BFAD72A8F359A00BDDAB8 /* Nerwork */ = {
+			isa = PBXGroup;
+			children = (
+				378614C12A8E493800B444FD /* DataMapperTests.swift */,
+				37F4A7EF2A8E4FA9000CA09A /* MockWeatherData.txt */,
+				378614C32A8E4C1D00B444FD /* GenericAPITests.swift */,
+			);
+			path = Nerwork;
+			sourceTree = "<group>";
+		};
+		376BFAD82A8F35B200BDDAB8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				37F4A7F12A8E5B60000CA09A /* TBDAServiceTests.swift */,
+				37F4A7F32A8E5C1D000CA09A /* PodcastRequestTests.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		376BFAD92A8F35FF00BDDAB8 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				37F4A7F52A8E655A000CA09A /* AudioPlayerManagerTests.swift */,
+				37F4A7F72A8E6661000CA09A /* AudioSessionHandlerTests.swift */,
+				376BFACB2A8E68C300BDDAB8 /* AVPlayerViewControllerWrapperTests.swift */,
+				376BFAD12A8E6A3800BDDAB8 /* PlayerStatePersistence.swift */,
+				376BFAD52A8F34BB00BDDAB8 /* PlayerStatePersistenceTests.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		376BFADC2A8F36B700BDDAB8 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				376BFADA2A8F36A000BDDAB8 /* PodcastCoreDataManagerTests.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		376D472D2A89D0FF00DA6979 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				37E446E02A7C1657000A0D9F /* PodcastSearchView.swift */,
+				376634212A81632900DC2BD9 /* SearchBarView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		376D472E2A89D3CB00DA6979 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				376D47362A89E98700DA6979 /* Detail */,
+				37B748592A7B7E7C0018E59B /* PodcastListView.swift */,
+				3766341F2A81626900DC2BD9 /* PodcastRowView.swift */,
+				376D472D2A89D0FF00DA6979 /* Search */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		376D472F2A89D3D900DA6979 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				37E446E22A7C1669000A0D9F /* PodcastFavoriteView.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		376D47302A89D50B00DA6979 /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+				3711A7A02A78DEB3007F8B9D /* ContentView.swift */,
+			);
+			path = Entry;
+			sourceTree = "<group>";
+		};
+		376D47352A89E95400DA6979 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3766341D2A8144E200DC2BD9 /* TBDASettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		376D47362A89E98700DA6979 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				37E446E92A7CCA58000A0D9F /* PodcastDetailView.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		378614B12A8E1ECE00B444FD /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				376D47312A89DB3100DA6979 /* PodcastSearchViewModel.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		378614B32A8E21D300B444FD /* Podcasts */ = {
+			isa = PBXGroup;
+			children = (
+				37322BEF2A790DBB0007F759 /* PodcastData.swift */,
+				379562ED2A873921007E107F /* PodcastViewModel.swift */,
+			);
+			path = Podcasts;
+			sourceTree = "<group>";
+		};
+		37AA6A612A835C7700DCC64C /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				37FEB33C2A93525900661A46 /* PodcastPlayerView.swift */,
+				37AA6A622A835CA200DCC64C /* AudioPlayerManager.swift */,
+				374B28E12A891A8800E08772 /* AudioSessionHandler.swift */,
+				375A73C42A8D22DA0017231A /* AVPlayerViewControllerWrapper.swift */,
+				37721E252A8DD6E200EE7E8D /* PlayerStatePersistence.swift */,
+				3765D4052A934C2900CD3C88 /* PlayerStatePersistable.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		37AF81E12A7A181600340547 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				37AF81D82A7A17EB00340547 /* APIError.swift */,
+				37AF81DA2A7A17EB00340547 /* DataMapper.swift */,
+				37AF81D72A7A17EB00340547 /* GenericAPI.swift */,
+				37AF81D92A7A17EB00340547 /* GenericAPIProtocol.swift */,
+				37AF81D62A7A17EB00340547 /* RequestProtocol.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		37B3D8612A8F728700B93040 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				3707818E2A8F54820089D46B /* MockPodcastSearchResult.txt */,
+				370781902A8F71D50089D46B /* MockTBDAService.swift */,
+				370781922A8F71F30089D46B /* PodcastSearchViewModelTests.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		37B7485B2A7B85230018E59B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				37AF81E22A7A1D1F00340547 /* TBDAService.swift */,
+				37AF81E42A7A1D3500340547 /* TBDARequest.swift */,
+				3707818C2A8F52BE0089D46B /* TBDAServiceProtocol.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		37FDFCFF2A8CA3A9003F8622 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				37FDFCFD2A8CA398003F8622 /* PodcastCoreDataManager.swift */,
+				370E5D222A9B2A330009CFDD /* CoreDataStack.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3711A79A2A78DEB3007F8B9D /* TribusDAmour */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3711A7C42A78DEB4007F8B9D /* Build configuration list for PBXNativeTarget "TribusDAmour" */;
+			buildPhases = (
+				3711A7972A78DEB3007F8B9D /* Sources */,
+				3711A7982A78DEB3007F8B9D /* Frameworks */,
+				3711A7992A78DEB3007F8B9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TribusDAmour;
+			packageProductDependencies = (
+				37E446E72A7CC4A2000A0D9F /* Kingfisher */,
+			);
+			productName = TribusDAmour;
+			productReference = 3711A79B2A78DEB3007F8B9D /* TribusDAmour.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3711A7AF2A78DEB4007F8B9D /* TribusDAmourTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3711A7C72A78DEB4007F8B9D /* Build configuration list for PBXNativeTarget "TribusDAmourTests" */;
+			buildPhases = (
+				3711A7AC2A78DEB4007F8B9D /* Sources */,
+				3711A7AD2A78DEB4007F8B9D /* Frameworks */,
+				3711A7AE2A78DEB4007F8B9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3711A7B22A78DEB4007F8B9D /* PBXTargetDependency */,
+			);
+			name = TribusDAmourTests;
+			productName = TribusDAmourTests;
+			productReference = 3711A7B02A78DEB4007F8B9D /* TribusDAmourTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3711A7B92A78DEB4007F8B9D /* TribusDAmourUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3711A7CA2A78DEB4007F8B9D /* Build configuration list for PBXNativeTarget "TribusDAmourUITests" */;
+			buildPhases = (
+				3711A7B62A78DEB4007F8B9D /* Sources */,
+				3711A7B72A78DEB4007F8B9D /* Frameworks */,
+				3711A7B82A78DEB4007F8B9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3711A7BC2A78DEB4007F8B9D /* PBXTargetDependency */,
+			);
+			name = TribusDAmourUITests;
+			productName = TribusDAmourUITests;
+			productReference = 3711A7BA2A78DEB4007F8B9D /* TribusDAmourUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3711A7932A78DEB3007F8B9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				ORGANIZATIONNAME = "SEL Consulting";
+				TargetAttributes = {
+					3711A79A2A78DEB3007F8B9D = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					3711A7AF2A78DEB4007F8B9D = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 3711A79A2A78DEB3007F8B9D;
+					};
+					3711A7B92A78DEB4007F8B9D = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 3711A79A2A78DEB3007F8B9D;
+					};
+				};
+			};
+			buildConfigurationList = 3711A7962A78DEB3007F8B9D /* Build configuration list for PBXProject "TribusDAmour" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3711A7922A78DEB3007F8B9D;
+			packageReferences = (
+				37E446E62A7CC4A2000A0D9F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 3711A79C2A78DEB3007F8B9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3711A79A2A78DEB3007F8B9D /* TribusDAmour */,
+				3711A7AF2A78DEB4007F8B9D /* TribusDAmourTests */,
+				3711A7B92A78DEB4007F8B9D /* TribusDAmourUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3711A7992A78DEB3007F8B9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3711A7A32A78DEB4007F8B9D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3711A7AE2A78DEB4007F8B9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3707818F2A8F54820089D46B /* MockPodcastSearchResult.txt in Resources */,
+				37F4A7F02A8E4FA9000CA09A /* MockWeatherData.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3711A7B82A78DEB4007F8B9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3711A7972A78DEB3007F8B9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37AF81DF2A7A17EB00340547 /* DataMapper.swift in Sources */,
+				37E446E12A7C1657000A0D9F /* PodcastSearchView.swift in Sources */,
+				37B7485A2A7B7E7C0018E59B /* PodcastListView.swift in Sources */,
+				3765D4062A934C2900CD3C88 /* PlayerStatePersistable.swift in Sources */,
+				37E446E32A7C1669000A0D9F /* PodcastFavoriteView.swift in Sources */,
+				37AF81DB2A7A17EB00340547 /* RequestProtocol.swift in Sources */,
+				37322BF02A790DBB0007F759 /* PodcastData.swift in Sources */,
+				37AF81E52A7A1D3500340547 /* TBDARequest.swift in Sources */,
+				37AA6A632A835CA200DCC64C /* AudioPlayerManager.swift in Sources */,
+				376D47322A89DB3100DA6979 /* PodcastSearchViewModel.swift in Sources */,
+				379562EE2A873921007E107F /* PodcastViewModel.swift in Sources */,
+				3707818D2A8F52BE0089D46B /* TBDAServiceProtocol.swift in Sources */,
+				374B28E22A891A8800E08772 /* AudioSessionHandler.swift in Sources */,
+				37FDFCFE2A8CA398003F8622 /* PodcastCoreDataManager.swift in Sources */,
+				37E446EA2A7CCA58000A0D9F /* PodcastDetailView.swift in Sources */,
+				3766341E2A8144E200DC2BD9 /* TBDASettingsView.swift in Sources */,
+				3711A7A82A78DEB4007F8B9D /* Persistence.swift in Sources */,
+				37AF81DE2A7A17EB00340547 /* GenericAPIProtocol.swift in Sources */,
+				37AF81E32A7A1D1F00340547 /* TBDAService.swift in Sources */,
+				3711A7A12A78DEB3007F8B9D /* ContentView.swift in Sources */,
+				37FEB33D2A93525900661A46 /* PodcastPlayerView.swift in Sources */,
+				376634222A81632900DC2BD9 /* SearchBarView.swift in Sources */,
+				3711A7AB2A78DEB4007F8B9D /* TribusDAmour.xcdatamodeld in Sources */,
+				37721E262A8DD6E200EE7E8D /* PlayerStatePersistence.swift in Sources */,
+				37AF81DC2A7A17EB00340547 /* GenericAPI.swift in Sources */,
+				370E5D232A9B2A330009CFDD /* CoreDataStack.swift in Sources */,
+				376634202A81626900DC2BD9 /* PodcastRowView.swift in Sources */,
+				3711A79F2A78DEB3007F8B9D /* TribusDAmourApp.swift in Sources */,
+				37AF81DD2A7A17EB00340547 /* APIError.swift in Sources */,
+				375A73C52A8D22DA0017231A /* AVPlayerViewControllerWrapper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3711A7AC2A78DEB4007F8B9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F4A7F82A8E6661000CA09A /* AudioSessionHandlerTests.swift in Sources */,
+				376BFAD62A8F34BB00BDDAB8 /* PlayerStatePersistenceTests.swift in Sources */,
+				37F4A7F42A8E5C1D000CA09A /* PodcastRequestTests.swift in Sources */,
+				376BFAD22A8E6A3800BDDAB8 /* PlayerStatePersistence.swift in Sources */,
+				376BFACC2A8E68C300BDDAB8 /* AVPlayerViewControllerWrapperTests.swift in Sources */,
+				37F4A7F62A8E655A000CA09A /* AudioPlayerManagerTests.swift in Sources */,
+				37F4A7F22A8E5B60000CA09A /* TBDAServiceTests.swift in Sources */,
+				370781932A8F71F30089D46B /* PodcastSearchViewModelTests.swift in Sources */,
+				378614C22A8E493800B444FD /* DataMapperTests.swift in Sources */,
+				376BFADB2A8F36A000BDDAB8 /* PodcastCoreDataManagerTests.swift in Sources */,
+				3711A7B52A78DEB4007F8B9D /* TribusDAmourTests.swift in Sources */,
+				370781912A8F71D50089D46B /* MockTBDAService.swift in Sources */,
+				378614C42A8E4C1D00B444FD /* GenericAPITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3711A7B62A78DEB4007F8B9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3711A7BF2A78DEB4007F8B9D /* TribusDAmourUITests.swift in Sources */,
+				3711A7C12A78DEB4007F8B9D /* TribusDAmourUITestsLaunchTests.swift in Sources */,
+				37FEB33B2A934F2600661A46 /* PlayerStatePersistenceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3711A7B22A78DEB4007F8B9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3711A79A2A78DEB3007F8B9D /* TribusDAmour */;
+			targetProxy = 3711A7B12A78DEB4007F8B9D /* PBXContainerItemProxy */;
+		};
+		3711A7BC2A78DEB4007F8B9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3711A79A2A78DEB3007F8B9D /* TribusDAmour */;
+			targetProxy = 3711A7BB2A78DEB4007F8B9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3711A7C22A78DEB4007F8B9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3711A7C32A78DEB4007F8B9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3711A7C52A78DEB4007F8B9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 12;
+				DEVELOPMENT_ASSET_PATHS = "\"TribusDAmour/Preview Content\"";
+				DEVELOPMENT_TEAM = 9QFL99WTU8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TribusDAmour/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TribusDAmour;
+				INFOPLIST_KEY_LSApplicationCategoryType = test;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We use the microphone to allow voice control in the app";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stephaneepiphanelefebvre..TribusDAmour;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3711A7C62A78DEB4007F8B9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 12;
+				DEVELOPMENT_ASSET_PATHS = "\"TribusDAmour/Preview Content\"";
+				DEVELOPMENT_TEAM = 9QFL99WTU8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TribusDAmour/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TribusDAmour;
+				INFOPLIST_KEY_LSApplicationCategoryType = test;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We use the microphone to allow voice control in the app";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stephaneepiphanelefebvre..TribusDAmour;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3711A7C82A78DEB4007F8B9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 12;
+				DEVELOPMENT_TEAM = 9QFL99WTU8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.selconsulting.TribusDAmourTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TribusDAmour.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TribusDAmour";
+			};
+			name = Debug;
+		};
+		3711A7C92A78DEB4007F8B9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 12;
+				DEVELOPMENT_TEAM = 9QFL99WTU8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.selconsulting.TribusDAmourTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TribusDAmour.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TribusDAmour";
+			};
+			name = Release;
+		};
+		3711A7CB2A78DEB4007F8B9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 12;
+				DEVELOPMENT_TEAM = 9QFL99WTU8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.selconsulting.TribusDAmourUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TribusDAmour;
+			};
+			name = Debug;
+		};
+		3711A7CC2A78DEB4007F8B9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 12;
+				DEVELOPMENT_TEAM = 9QFL99WTU8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.selconsulting.TribusDAmourUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TribusDAmour;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3711A7962A78DEB3007F8B9D /* Build configuration list for PBXProject "TribusDAmour" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3711A7C22A78DEB4007F8B9D /* Debug */,
+				3711A7C32A78DEB4007F8B9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3711A7C42A78DEB4007F8B9D /* Build configuration list for PBXNativeTarget "TribusDAmour" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3711A7C52A78DEB4007F8B9D /* Debug */,
+				3711A7C62A78DEB4007F8B9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3711A7C72A78DEB4007F8B9D /* Build configuration list for PBXNativeTarget "TribusDAmourTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3711A7C82A78DEB4007F8B9D /* Debug */,
+				3711A7C92A78DEB4007F8B9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3711A7CA2A78DEB4007F8B9D /* Build configuration list for PBXNativeTarget "TribusDAmourUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3711A7CB2A78DEB4007F8B9D /* Debug */,
+				3711A7CC2A78DEB4007F8B9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		37E446E62A7CC4A2000A0D9F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		37E446E72A7CC4A2000A0D9F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37E446E62A7CC4A2000A0D9F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		3711A7A92A78DEB4007F8B9D /* TribusDAmour.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3711A7AA2A78DEB4007F8B9D /* TribusDAmour.xcdatamodel */,
+			);
+			currentVersion = 3711A7AA2A78DEB4007F8B9D /* TribusDAmour.xcdatamodel */;
+			path = TribusDAmour.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3711A7932A78DEB3007F8B9D /* Project object */;
+}
