@@ -1,0 +1,6 @@
+os: osx
+osx_image: xcode14.3
+language: swift
+xcode_project: TribusDAmour.xcodeproj
+xcode_scheme: TribusDAmour
+xcode_destination: platform=iOS Simulator,OS=15.0,name=iPhone 12

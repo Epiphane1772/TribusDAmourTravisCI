@@ -36,6 +36,7 @@
 		37721E262A8DD6E200EE7E8D /* PlayerStatePersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37721E252A8DD6E200EE7E8D /* PlayerStatePersistence.swift */; };
 		378614C22A8E493800B444FD /* DataMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378614C12A8E493800B444FD /* DataMapperTests.swift */; };
 		378614C42A8E4C1D00B444FD /* GenericAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378614C32A8E4C1D00B444FD /* GenericAPITests.swift */; };
+		378EBF342AA2FEE0001D0AD8 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 378EBF332AA2FEE0001D0AD8 /* .travis.yml */; };
 		379562EE2A873921007E107F /* PodcastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379562ED2A873921007E107F /* PodcastViewModel.swift */; };
 		37AA6A632A835CA200DCC64C /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AA6A622A835CA200DCC64C /* AudioPlayerManager.swift */; };
 		37AF81DB2A7A17EB00340547 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AF81D62A7A17EB00340547 /* RequestProtocol.swift */; };
@@ -111,6 +112,7 @@
 		37721E252A8DD6E200EE7E8D /* PlayerStatePersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatePersistence.swift; sourceTree = "<group>"; };
 		378614C12A8E493800B444FD /* DataMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMapperTests.swift; sourceTree = "<group>"; };
 		378614C32A8E4C1D00B444FD /* GenericAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericAPITests.swift; sourceTree = "<group>"; };
+		378EBF332AA2FEE0001D0AD8 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .travis.yml; sourceTree = "<group>"; };
 		379562ED2A873921007E107F /* PodcastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastViewModel.swift; sourceTree = "<group>"; };
 		37AA6A622A835CA200DCC64C /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
 		37AF81D62A7A17EB00340547 /* RequestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				3711A7A72A78DEB4007F8B9D /* Persistence.swift */,
 				374B28E52A895CBA00E08772 /* Models */,
 				374B28F52A89666300E08772 /* Views */,
+				378EBF332AA2FEE0001D0AD8 /* .travis.yml */,
 			);
 			path = TribusDAmour;
 			sourceTree = "<group>";
@@ -524,6 +527,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				378EBF342AA2FEE0001D0AD8 /* .travis.yml in Resources */,
 				3711A7A32A78DEB4007F8B9D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
